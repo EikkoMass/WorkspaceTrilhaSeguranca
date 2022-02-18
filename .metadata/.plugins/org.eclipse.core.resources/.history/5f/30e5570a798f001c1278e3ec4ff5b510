@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+<style>
+
+* {
+margin:0;
+padding: 0;
+font-family: 'Arial';
+}
+
+label {
+
+font-weight: bold;
+font-size:18px;
+display:block;
+
+}
+
+fieldset
+{
+margin: 5% auto;
+width: 50%;
+height:300px;
+
+}
+
+div
+{
+margin: 5% 20px;
+
+}
+
+button
+{
+padding: 15px 100px;
+display:block;
+margin: 0 auto;
+background: green;
+}
+
+</style>
+<fieldset>
+<legend>Log in</legend>
+
+<form method="POST" action="autenticar" >
+
+<div id="login">
+  <label>Nome: </label>
+  <input type="text" name="nome">
+</div>
+
+<div id="password">
+  <label>Senha: </label>
+  <input type="password" name="senha">
+  
+</div>
+
+<button type="submit">Enviar</button>
+</form>
+</fieldset>
+</body>
+</html>

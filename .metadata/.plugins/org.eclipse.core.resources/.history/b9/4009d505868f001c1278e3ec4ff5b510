@@ -1,0 +1,49 @@
+package LoginServlet;
+
+import java.io.IOException;
+import java.sql.Connection;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import ArmaDadosUsuario.ArmazenaDadosUsuario;
+import AutenticacaoJdbcDAO.JDBCAutenticaDAO;
+import Conexao.Conexao;
+
+public class AutenticacaoServlet extends HttpServlet {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	private void process(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+
+		Conexao conexao = new Conexao();
+		Connection connection = (Connection) conexao.abrirConexao();
+
+		ArmazenaDadosUsuario dadosUsuario = new ArmazenaDadosUsuario(request.getParameter("nome"), request.getParameter("senha"));
+		
+		JDBCAutenticaDAO jdbc = new JDBCAutenticaDAO(connection);
+		boolean retorno = jdbc
+				.consultar(dadosUsuario);
+		
+		conexao.fecharConexao();
+		response.sendRedirect(retorno ? "principal.html?sessionId=" + request.getSession().getId() + "&username=" + dadosUsuario.getUsuario() : "index.html");
+		
+	}
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		process(request, response);
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		process(request, response);
+	}
+
+}

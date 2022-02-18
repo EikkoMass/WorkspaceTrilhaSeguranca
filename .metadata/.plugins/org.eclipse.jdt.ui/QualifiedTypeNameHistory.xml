@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="ArmaDadosUsuario.ArmazenaDadosUsuario"/>
+    <fullyQualifiedTypeName name="com.sun.org.apache.xml.internal.security.utils.Base64"/>
+    <fullyQualifiedTypeName name="java.util.Base64.Decoder"/>
+    <fullyQualifiedTypeName name="java.security.NoSuchAlgorithmException"/>
+    <fullyQualifiedTypeName name="java.security.MessageDigest"/>
+    <fullyQualifiedTypeName name="java.math.BigInteger"/>
+    <fullyQualifiedTypeName name="java.util.Base64"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.Cookie"/>
+    <fullyQualifiedTypeName name="javax.servlet.Filter"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
+</qualifiedTypeNameHistroy>

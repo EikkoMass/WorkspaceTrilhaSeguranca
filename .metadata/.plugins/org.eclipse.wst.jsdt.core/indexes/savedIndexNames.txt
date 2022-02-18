@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+/home/eikkomass/Documents/Workspaces/WorkspaceTrilhaSegurança/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+3825103994.index
+3233268769.index
+3624708079.index
+618369834.index
+2675782550.index
+966198529.index
